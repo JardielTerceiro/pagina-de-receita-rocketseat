@@ -4,18 +4,16 @@
 }
 
 :root {
-  font-family: "alice";
-  line-height: 150%;
   --background-color: #573824;
   --surface-color: #f0e8c2;
-  --text-color-primary: #291B1A;
-  --text-color-secondary: #573A37;
+  --text-color-primary: #291b1a;
+  --text-color-secondary: #573a37;
 }
 
 body {
   background-image: url(assets/bg-image.jpg);
   background-size: cover;
-  
+  font-family: "Alice", serif;
 }
 
 #page {
@@ -35,20 +33,28 @@ main {
   margin: 24px;
 }
 
-h1 {
-  font-size: 40px;
-  color: var(--text-color-primary);
-  line-height: 140%;
-  margin-bottom: 4px;
+section + section {
+  margin-top: 24px;
 }
 
 #about p + p {
   margin-top: 12px;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 h2 {
-  color: var(--text-color-primary);
   font-size: 24px;
+}
+
+h1,
+h2 {
+  margin-bottom: 4px;
+  color: var(--text-color-primary);
+  line-height: 150%;
+  font-weight: 400;
 }
 
 p {
@@ -56,3 +62,12 @@ p {
   font-size: 16px;
 }
 
+ul {
+  margin-left: 24px;
+}
+
+li {
+  padding: 1px;
+  line-height: 140%;
+  color: var(--text-color-secondary);
+}
