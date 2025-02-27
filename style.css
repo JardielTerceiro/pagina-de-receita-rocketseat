@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   font-family: "alice";
@@ -27,7 +31,7 @@ img {
   border-radius: 16px;
 }
 
-section {
+main {
   margin: 24px;
 }
 
@@ -35,6 +39,11 @@ h1 {
   font-size: 40px;
   color: var(--text-color-primary);
   line-height: 140%;
+  margin-bottom: 4px;
+}
+
+#about p + p {
+  margin-top: 12px;
 }
 
 h2 {
